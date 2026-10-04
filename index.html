@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LizCakes | Repostería Artesanal</title>
+
+    <!-- 1. Cargar Tailwind CSS desde CDN (Gratis, rápido y sin instalar nada con Node.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- 2. Cargar tu propio archivo de estilos personalizados -->
+    <link rel="stylesheet" href="css/custom.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body class="bg-pink-soft text-chocolate-dark font-sans">
+    <!-- HEADER / NAVBAR -->
+    
+  
+
+<header class="backdrop-blur-md sticky top-0 z-50 border-b border-pink-200/60 shadow-md">
+  <div class="max-w-6xl mx-auto px-6 py-3 flex justify-between items-center">
+    
+    <a href="#inicio" class="flex items-center gap-2 group">
+      <img
+        src="img/LizCakes-logo2.png"
+        alt="LizCakes Logo"
+        class="h-[90px] w-auto object-contain transition group-hover:scale-105"
+      />
+    </a>
+
+    <button 
+      id="btn-menu" 
+      type="button"
+      class="md:hidden text-chocolate-dark text-2xl p-2 focus:outline-none"
+      aria-label="Abrir menú"
+    >
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <nav 
+      id="menu-nav" 
+      class="hidden absolute top-full left-0 w-full bg-white border-b border-pink-100 p-6 shadow-lg flex-col gap-4 text-center 
+      md:static md:flex md:flex-row md:w-auto md:bg-transparent md:border-none md:p-0 md:shadow-none md:gap-8 font-semibold text-chocolate-dark"
+    >
+      <a href="#inicio" class="hover:text-pink-600 transition py-2 md:py-0">Inicio</a>
+      <a href="#catalogo" class="hover:text-pink-600 transition py-2 md:py-0">Catálogo</a>
+      <a href="#sobre-mi" class="hover:text-pink-600 transition py-2 md:py-0">Sobre Mí</a>
+      
+      <a 
+        href="https://wa.me/5219991234567" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="inline-flex items-center justify-center gap-2 bg-emerald-500 text-white px-4 py-2 rounded-full font-medium hover:bg-emerald-600 transition shadow-sm"
+      >
+        <i class="fa-brands fa-whatsapp text-lg"></i>
+       <!-- <span>Pedidos</span> --> 
+      </a>
+    </nav>
+
+  </div>
+</header>
+
+
+    <main>
+      <section id="inicio">
+        <h1>Endulza tus momentos especiales</h1>
+        <p>Descubre nuestro catálogo de postres.</p>
+        <a href="#catalogo">Ver Catálogo</a>
+      </section>
+
+      <section id="catalogo">
+        <h2>Nuestras Delicias</h2>
+
+        <div id="contenedor-postres">
+          <p>Cargando catálogo...</p>
+        </div>
+      </section>
+
+      <section id="sobre-mi">
+        <h2>Conoce a la Repostera</h2>
+        <p>¡Hola! Soy Vane. Apasionada por la repostería artesanal...</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 LizCakes - Todos los derechos reservados.</p>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

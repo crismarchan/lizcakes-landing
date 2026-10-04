@@ -1,0 +1,25 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+
+/* Configuración de Tokens para Tailwind v4 */
+@theme {
+  /* Tipografía */
+  --font-sans: 'Poppins', sans-serif;
+
+  /* Paleta de Colores Personalizada */
+  --color-pink-soft: #f8dddd;
+  --color-cream-white: #ffffff;
+  --color-yellow-butter: #fde047;
+  --color-chocolate-dark: #3e2723;
+  --color-whatsapp-green: #25d366;
+}
+
+:root {
+  --color-pink-soft: #f8dddd;
+  --color-chocolate-dark: #3e2723;
+}
+
+body {
+  background-color: var(--color-pink-soft);
+  color: var(--color-chocolate-dark);
+}
